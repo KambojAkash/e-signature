@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Digitally And Download</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+</head>
+<body>
+    <h1>Get Your Signature!</h1>
+    <h2 class="msg">For Better experience open in desktop mode</h2>
+    <div>
+        <span>Select Color : </span>
+    <input type="color" name="" id="colors">
+    <label for="thicknessRange">Line Thickness:</label>
+        <input type="range" id="thicknessRange" min="1" max="10" >
+</div>
+    <canvas id="signatureCanvas" width="800" height="400"></canvas>
+    <div class="btns">
+    
+    <button id="downloadButton">Download Signed Document</button>
+    <button id="clearButton">Clear Signature</button>
+    <button id="saveAsPDFButton">Save Pdf Signature</button>
+    
+
+</div>
+
+</body>
+<script src="script.js"></script>
+</html>
